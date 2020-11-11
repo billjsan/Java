@@ -18,16 +18,16 @@ public class TesteAccount{
 	System.out.printf("\nAdicionando: R$ %.2f a conta 1",depositAmount);
 	conta1.credit(depositAmount);
 
-	System.out.printf("Saldo da conta 1: R$ %.2f\n",conta1.getBalance());
-	System.out.printf("Saldo da conta 2: R$ %.2f\n",conta2.getBalance());
+	System.out.printf("\nSaldo da conta 1: R$ %.2f\n",conta1.getBalance());
+	System.out.printf("\nSaldo da conta 2: R$ %.2f\n",conta2.getBalance());
 
 	System.out.printf("Entre com valor de deposito para conta2: ");
 	depositAmount = entrada.nextDouble();
 	System.out.printf("\nAdicionando: R$ %.2f a conta 2",depositAmount);
 	conta2.credit(depositAmount);
 
-	System.out.printf("Saldo da conta 1: R$ %.2f\n",conta1.getBalance());
-	System.out.printf("Saldo da conta 2: R$ %.2f\n",conta2.getBalance());
+	System.out.printf("\nSaldo da conta 1: R$ %.2f\n",conta1.getBalance());
+	System.out.printf("\nSaldo da conta 2: R$ %.2f\n",conta2.getBalance());
 
 
 }
