@@ -3,8 +3,8 @@
 
 public class GradeBook{
 
-	public void displayMessage(){
-	System.out.println("welcome to the Grade Book!");
+	public void displayMessage(String name){
+	System.out.printf("welcome: %s\n",name);
 	}
 
 }
