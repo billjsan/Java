@@ -1,3 +1,9 @@
+//aprendendo Java - 
+//usando notepad e JDK 15.0.1
+//livro de referencia:
+//data: 10/11/2020
+//autor: willian santos
+
 import java.util.Scanner;
 
 public class TesteGradeBook{
@@ -5,14 +11,14 @@ public class TesteGradeBook{
 
 	public static void main(String[] args){
 
-	GradeBook meuGradeBook = new GradeBook(); //cria objeto e associa 
-	Scanner entrada = new Scanner (System.in);
+	Scanner input = new Scanner(System.in);
+	GradeBook myGradeBook = new GradeBook();
 
-	System.out.println("Insira seu nome");
-	String nome = entrada.nextLine();
+	System.out.printf("Entre com nome do curso:");
+	String theName = input.nextLine();
+	myGradeBook.setCourseName(theName);
 	System.out.println();
-
-	meuGradeBook.displayMessage(nome);
+	myGradeBook.displayMessage();
 	}
 
 
