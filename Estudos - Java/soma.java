@@ -1,4 +1,4 @@
-
+import javax.swing.JOptionPane;
 import java.util.Scanner;
 
 public class soma{
@@ -10,15 +10,19 @@ public class soma{
 	int num2;
 	int sum;
 
-	System.out.print("Insira primeiro inteiro");
-	num1= input.nextInt();
 
-	System.out.print("Insira segundo inteiro");
-	num2 = input.nextInt();
+	String Value = JOptionPane.showInputDialog("digite primeiro inteiro"); 
+	num1 = Integer.parseInt(Value);
+
+	Value = JOptionPane.showInputDialog("digite segundo inteiro"); 
+	num2 = Integer.parseInt(Value);
 
 	sum = num1 + num2;
+	
+	String message = String.format("A soma de %d + %d = %d",num1,num2,sum);
 
-	System.out.printf("a soma eh: %d",sum);
+	JOptionPane.showMessageDialog (null,message);
+
 	}
 
 }
