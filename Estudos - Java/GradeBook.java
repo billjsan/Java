@@ -36,21 +36,30 @@ public class GradeBook{
 	int total;
 	int gradeCounter;
 	int grade;
-	int average;
+	double average;
 
 	total = 0;
-	gradeCounter = 1;
+	gradeCounter = 0;
 
-		while(gradeCounter <= 10){
-		System.out.print("Enter grade: ");
-		grade = input.nextInt();
+	System.out.print("Enter grade or -1 to quit: ");
+	grade = input.nextInt();
+
+		while(grade != -1){
 		total = total + grade;
-		gradeCounter = gradeCounter + 1;
-		
+		gradeCounter ++ ;
+		System.out.print("Enter grade or -1 to quit: ");
+		grade = input.nextInt();				
 		}
-	average = total /10;
-	System.out.printf("\nTotal of all 10 grades is %d\n",total);
-	System.out.printf("\nClass average is %d\n",average);
+
+		if (gradeCounter != 0){
+		average = (double) total /gradeCounter;
+		System.out.printf("\nTotal of all %d grades is %d\n",gradeCounter,total);
+		System.out.printf("\nClass average is %.2f\n",average);
+		}
+		
+		else{
+		System.out.printf("\nNo grades were entered\n");
+		}
 	}
 
 }
