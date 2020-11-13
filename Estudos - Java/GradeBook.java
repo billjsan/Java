@@ -6,6 +6,8 @@
 
 //classe referenciada no programa TesteGradeBook.java
 
+import java.util.Scanner;
+
 public class GradeBook{
 
 	private String courseName;
