@@ -25,7 +25,7 @@ public class TesteGradeBook{
 	myGradeBook.setCourseName(theName);
 	System.out.println();
 	myGradeBook.displayMessage();
-	myGradeBook.determineClassAverage();
+	myGradeBook.inputGrades();
 	}
 
 
