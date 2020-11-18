@@ -65,6 +65,8 @@ public class GradeBook{
 
 		switch(grade/10){
 		case 9:
+		++aCount;
+		break;
 		case 10:
 		++aCount;
 		break;
@@ -98,7 +100,7 @@ public class GradeBook{
 		System.out.printf("Class average is %.2f\n", average);
 		System.out.printf("%s\n %s%d\n %s%d\n %s%d\n %s%d\n %s%d\n",
 		"Number of students who receivd each grade: ",
-		"A: ",aCount,
+		"A: ", aCount,
 		"B: ", bCount,
 		"C: ", cCount,
 		"D: ", dCount,
