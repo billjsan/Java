@@ -1,6 +1,13 @@
-// programa em JAVA
-// Willian Santos 10/11/2020
-// fundamentos 
+/*
+Estudos de  Java  
+Usando notepad e JDK 15.0.1
+
+livro de referencia: 
+Java: como programar 8ª edição 
+Deitel,Paul; Deitel Harvey M.
+ 
+data: nov/2020
+autor: Willian Santos */
 
 
 
