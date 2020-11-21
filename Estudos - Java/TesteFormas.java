@@ -22,6 +22,7 @@ public class TesteFormas{
 	
 		//chama o metodo .showImputDialog envia uma mensagem e salva o retorno em 'entrada'
 	String entrada = JOptionPane.showInputDialog(
+	"Entre com 0 para desenhar circulos \n" +
 	"Entre com 1 para desenhar retangulos\n"+
 	"Entre com 2 para desenhar ovais");
 
@@ -36,7 +37,7 @@ public class TesteFormas{
 		//passagem de parametros para os metodos da classe JFrame que configuram a janela
 	app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //encerra o programa ao cliclar no x
 	app.add(painel);			//adiciona o objeto de desenho a classe da janela  
-	app.setSize(300,300);						    //dimensiona a janela
+	app.setSize(500,500);						    //dimensiona a janela
 	app.setVisible(true);					        //torna visivel o desenho
 	}
 }
