@@ -15,7 +15,7 @@ import java.util.Random;
 
 public class Craps{
 
-	//
+	//declara a variavel de instancia 
 private static final Random $randomNum = new Random();
 
 	//cria o enumeração com constantes
@@ -31,41 +31,39 @@ private static final int BOX_CARS = 12;
 		//jogo 
 	public void play (){
 	
+		//armazena pontuação
 	int _pontos = 0;
 
+		//armazena o status do jogo
 	Status gameStatus;
 	 
+		//armazena resultado do metodo rollDice
 	int _somaDados = rollDice();
 	
+			//decisao
 		switch(_somaDados){
 
 		case SEVEN:
-
 		case YO_LEVEN:
-
 		gameStatus = Status.WON;
 		break;
 
 		case SNAKE_YES:
-		
 		case TREY:
-		
 		case BOX_CARS:
-
 		gameStatus = Status.LOST;
 		break;
 	
 		default:
-
 		gameStatus = Status.CONTINUE;
 		_pontos = _somaDados;
-
 		System.out.printf("Pontuacao : %d", _pontos);
 		}//fim do switch 
 	
 
 		while(gameStatus == Status.CONTINUE){
-		
+	
+			//armazena resultado do metodo rollDice	
 		_somaDados = rollDice();
 
 			if (_somaDados == _pontos){
@@ -90,15 +88,19 @@ private static final int BOX_CARS = 12;
 
 	}//fim do método play
 
+		//metodo de rolar o dado
 	public int rollDice(){
 		
+		//gera dois numeros aleatorios
 	int dado1 = 1 + $randomNum.nextInt(6);
 	int dado2 = 1 + $randomNum.nextInt(6);
-		
+
+		//soma os dois valores
 	int soma = dado1 + dado2;
 
 	System.out.printf("o Jogador jogou: %d + %d ", dado1, dado2);
 
+		//retorna o resultado da soma dos dados
 	return soma;
 	} // fim do metodo rollDice
 
