@@ -22,7 +22,7 @@ public class TesteDrawSmiley{
 
 
 	meuFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	meuFrame.add(painel);
+	meuFrame.add( painel );
 	meuFrame.setSize(230,250);
 	meuFrame.setVisible(true);
 	}
