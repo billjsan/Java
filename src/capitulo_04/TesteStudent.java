@@ -8,9 +8,7 @@ package capitulo_04;
 public class TesteStudent {
 
 	public static void main(String[] args) {
-		
-		System.out.println("If..else aninhados");
-		
+			
 		/**
 		 * Cria as instancias dos alunos
 		 * e configura seus valores iniciais
@@ -25,8 +23,7 @@ public class TesteStudent {
 				aluno1.getNome(), aluno1.getLetraNota());
 		System.out.printf("A nota de %s foi: %s\n",
 				aluno2.getNome(), aluno2.getLetraNota());
-		
-		
+			
 		/**
 		 * Questão 11
 		 */
@@ -35,8 +32,6 @@ public class TesteStudent {
 		System.out.printf("A nota de %s foi: %s\n",
 				aluno2.getNome(), aluno2.obtemLetraNota());
 
-		
-		
 		/**
 		 * Questão 12
 		 */

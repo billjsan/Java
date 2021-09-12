@@ -51,7 +51,6 @@ public class Student {
 	 */
 	public void setMedia(double media) {
 		
-		
 		defineMedia(media);//Questão 10
 		
 //		if (media >=0 && media <=100) {

@@ -26,7 +26,6 @@ public class Testa {
 		
 		//passa o array como parametro para o metodo
 		meuexemplo.exemploLacos(valores);
-
 		//fim questao 3 --------------------------------------------------------
 		
 		/**
@@ -34,7 +33,6 @@ public class Testa {
 		 * 
 		 */
 		meuexemplo.exemploSelecaoSwitch(100);
-		
 		//fim questao 4 --------------------------------------------------------
 		
 		/**
@@ -48,13 +46,8 @@ public class Testa {
 		 * Questao 7
 		 */
 		meuexemplo.exemploOperadorCondicional(6);
-		
-		
-
-
-		
+		//fim questao 7 --------------------------------------------------------
 		
 	}
 	
-
 }

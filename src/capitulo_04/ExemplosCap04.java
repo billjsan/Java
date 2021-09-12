@@ -10,7 +10,6 @@ public class ExemplosCap04 {
 		if(valor ==10) {
 			System.out.println("Você digitou 10");
 		}
-		
 		if(valor >=100) {
 			System.out.println("Você digitou um valor maior ou igual a 100");
 		}else {
@@ -111,8 +110,6 @@ public class ExemplosCap04 {
 				System.out.println("os dois valores sao maiores que 5");
 		}else
 		System.out.println("o primeiro valor é menor ou igual a 5");
-		
-		
 	}// fim questao 5 ----------------------------------------------------------
 	
 	/**
