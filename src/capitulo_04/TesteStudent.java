@@ -33,10 +33,12 @@ public class TesteStudent {
 				aluno2.getNome(), aluno2.obtemLetraNota());
 
 		/**
-		 * Questão 12
+		 * Questão 13
 		 */
 		System.out.println(aluno1.toString());
 		System.out.println(aluno2.toString());
+		
+		
 	}
 
 }
